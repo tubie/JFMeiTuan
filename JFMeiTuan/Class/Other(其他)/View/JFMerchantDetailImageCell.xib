@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KGk-i7-Jjw" customClass="JFMerchantDetailImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STI-Du-aCy" userLabel="存放星星的视图">
+                        <rect key="frame" x="0.0" y="120" width="140" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7CG-NT-m6P"/>
+                            <constraint firstAttribute="width" constant="140" id="eMa-XK-Lij"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_customReview_image_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-2G-wWL" userLabel="默认图形">
+                        <rect key="frame" x="249" y="92" width="71" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="7U8-VI-2HZ"/>
+                            <constraint firstAttribute="width" constant="71" id="dcg-av-u42"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTi-od-tD0">
+                        <rect key="frame" x="13" y="92" width="209" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="EdR-us-Mjb"/>
+                            <constraint firstAttribute="width" constant="209" id="FBe-HO-mPf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-Td-tlb">
+                        <rect key="frame" x="147" y="126" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="AjP-5L-wDX"/>
+                            <constraint firstAttribute="height" constant="21" id="x7s-Wk-rqf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-Lo-gxV" userLabel="店图">
+                        <rect key="frame" x="-10" y="-5" width="339" height="169"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="339" id="hjE-hO-6UI"/>
+                            <constraint firstAttribute="height" constant="169" id="mfb-M5-IW7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KTi-od-tD0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="84" id="0Mo-is-vvP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eWP-Lo-gxV" secondAttribute="bottom" constant="-12.5" id="3K4-1J-udp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Gwl-2G-wWL" secondAttribute="bottom" constant="-7.5" id="E7A-w5-ggc"/>
+                    <constraint firstItem="STI-Du-aCy" firstAttribute="top" secondItem="KTi-od-tD0" secondAttribute="bottom" constant="7" id="Fru-Vq-dfw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Gwl-2G-wWL" secondAttribute="trailing" constant="-8" id="G4y-Pc-gt1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fLe-Td-tlb" secondAttribute="bottom" constant="4.5" id="JIy-rl-yQN"/>
+                    <constraint firstItem="STI-Du-aCy" firstAttribute="top" secondItem="KTi-od-tD0" secondAttribute="bottom" constant="7" id="JKm-sM-gjf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="STI-Du-aCy" secondAttribute="bottom" constant="-8.5" id="LuT-XY-S8d"/>
+                    <constraint firstItem="eWP-Lo-gxV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-13" id="atq-rs-nWI"/>
+                    <constraint firstItem="fLe-Td-tlb" firstAttribute="leading" secondItem="STI-Du-aCy" secondAttribute="trailing" constant="7" id="bNK-aY-Chl"/>
+                    <constraint firstItem="fLe-Td-tlb" firstAttribute="top" secondItem="KTi-od-tD0" secondAttribute="bottom" constant="13" id="clT-IH-TBb"/>
+                    <constraint firstItem="eWP-Lo-gxV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-18" id="dxa-Nw-nmy"/>
+                    <constraint firstItem="Gwl-2G-wWL" firstAttribute="leading" secondItem="fLe-Td-tlb" secondAttribute="trailing" constant="60" id="iNB-U4-lOh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eWP-Lo-gxV" secondAttribute="trailing" constant="-17" id="k0i-bl-Fqo"/>
+                    <constraint firstItem="Gwl-2G-wWL" firstAttribute="leading" secondItem="KTi-od-tD0" secondAttribute="trailing" constant="27" id="kdQ-be-9kj"/>
+                    <constraint firstItem="fLe-Td-tlb" firstAttribute="leading" secondItem="STI-Du-aCy" secondAttribute="trailing" constant="7" id="lhO-Tu-1fk"/>
+                    <constraint firstItem="Gwl-2G-wWL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="84" id="suL-kF-lLf"/>
+                    <constraint firstItem="KTi-od-tD0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="wP3-99-999"/>
+                    <constraint firstItem="STI-Du-aCy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="xNe-k3-qxd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="defaultImageView" destination="Gwl-2G-wWL" id="k2b-Tm-oNy"/>
+                <outlet property="introduceLabel" destination="KTi-od-tD0" id="XF8-Vd-QEt"/>
+                <outlet property="layoutStarView" destination="STI-Du-aCy" id="dGK-Ie-UXO"/>
+                <outlet property="priceLabel" destination="fLe-Td-tlb" id="d2X-Sb-wLc"/>
+                <outlet property="shopImageView" destination="eWP-Lo-gxV" id="659-EJ-Tmd"/>
+            </connections>
+            <point key="canvasLocation" x="319" y="289"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_customReview_image_default.png" width="51" height="51"/>
+    </resources>
+</document>

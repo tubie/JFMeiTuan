@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JFAddressScrollView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7N-ff-drw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="klL-hH-O4r"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knv-Y8-yWu">
+                    <rect key="frame" x="0.0" y="187" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前城市:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CU-It-FlR">
+                            <rect key="frame" x="39" y="14" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上海" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upz-sX-iaM">
+                            <rect key="frame" x="110" y="14" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_dropdown_location_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-YV-ZnB">
+                            <rect key="frame" x="0.0" y="6" width="38" height="38"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_payment_right_green_arrow@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-FE-XMm">
+                            <rect key="frame" x="300" y="13" width="12" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="LFl-9w-PHN"/>
+                                <constraint firstAttribute="width" constant="12" id="SJV-RL-WPZ"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdY-59-Nbv">
+                            <rect key="frame" x="262" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Drf-Af-oV5"/>
+                                <constraint firstAttribute="height" constant="30" id="NeN-8S-P9v"/>
+                            </constraints>
+                            <state key="normal" title="切换">
+                                <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeCityButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="R1B-RV-cWB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fc6-FE-XMm" firstAttribute="leading" secondItem="WdY-59-Nbv" secondAttribute="trailing" constant="8" id="20W-n1-hUW"/>
+                        <constraint firstItem="fc6-FE-XMm" firstAttribute="leading" secondItem="WdY-59-Nbv" secondAttribute="trailing" constant="8" id="502-O9-EqL"/>
+                        <constraint firstAttribute="height" constant="50" id="CVi-ZY-53H"/>
+                        <constraint firstItem="fc6-FE-XMm" firstAttribute="top" secondItem="knv-Y8-yWu" secondAttribute="top" constant="13" id="FhI-vI-ami"/>
+                        <constraint firstItem="WdY-59-Nbv" firstAttribute="top" secondItem="knv-Y8-yWu" secondAttribute="top" constant="10" id="QyT-OQ-mUA"/>
+                        <constraint firstAttribute="bottom" secondItem="fc6-FE-XMm" secondAttribute="bottom" constant="13" id="Y4T-C8-PiG"/>
+                        <constraint firstAttribute="trailing" secondItem="fc6-FE-XMm" secondAttribute="trailing" constant="8" id="dsG-PD-VbK"/>
+                        <constraint firstAttribute="bottom" secondItem="WdY-59-Nbv" secondAttribute="bottom" constant="10" id="sQX-ou-2Fp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="knv-Y8-yWu" secondAttribute="bottom" constant="3" id="14x-0W-UZP"/>
+                <constraint firstItem="knv-Y8-yWu" firstAttribute="top" secondItem="M7N-ff-drw" secondAttribute="bottom" constant="2" id="5qY-uH-VFq"/>
+                <constraint firstAttribute="trailing" secondItem="knv-Y8-yWu" secondAttribute="trailing" id="9fY-LF-H6v"/>
+                <constraint firstItem="knv-Y8-yWu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QCY-B8-niX"/>
+                <constraint firstItem="knv-Y8-yWu" firstAttribute="top" secondItem="M7N-ff-drw" secondAttribute="bottom" constant="2" id="Xqf-cf-n3V"/>
+                <constraint firstAttribute="trailing" secondItem="M7N-ff-drw" secondAttribute="trailing" id="bYP-c3-h6U"/>
+                <constraint firstItem="M7N-ff-drw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oUJ-X2-psW"/>
+                <constraint firstItem="M7N-ff-drw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vVC-k8-ngw"/>
+                <constraint firstItem="M7N-ff-drw" firstAttribute="leading" secondItem="knv-Y8-yWu" secondAttribute="leading" id="yJB-9q-2nR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="M7N-ff-drw" id="M0U-cS-Ldq"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="385"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_dropdown_location_selected.png" width="38" height="38"/>
+        <image name="icon_payment_right_green_arrow@2x.png" width="16" height="16"/>
+    </resources>
+</document>

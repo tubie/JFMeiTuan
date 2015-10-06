@@ -1,0 +1,22 @@
+//
+//  JFPrefixHeader.pch
+//  JF团购
+//
+//  Created by 保修一站通 on 15/8/13.
+//  Copyright (c) 2015年 JF团购. All rights reserved.
+//
+
+#ifndef JF___JFPrefixHeader_pch
+#define JF___JFPrefixHeader_pch
+#import "JFMacro.h"
+
+#endif
+#ifdef DEBUG
+
+#   define JFLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#   define ELog(err) {if(err) DLog(@"%@", err)}
+#else
+#   define DLog(...)
+#   define ELog(err)
+
+#endif

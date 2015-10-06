@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="JFMerchantDetailAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_merchant_location.png" translatesAutoresizingMaskIntoConstraints="NO" id="sep-bs-w4P">
+                        <rect key="frame" x="8" y="8" width="35" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33.5" id="KgR-Zh-Bny"/>
+                            <constraint firstAttribute="width" constant="35" id="kBW-CW-jAk"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlV-ig-Jut">
+                        <rect key="frame" x="278" y="12" width="19" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="804-GU-pEp"/>
+                            <constraint firstAttribute="width" constant="19" id="nTM-Sl-60W"/>
+                        </constraints>
+                        <state key="normal" image="icon_deal_phone.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="PhoneBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9WU-du-EDQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2U3-q5-mlm">
+                        <rect key="frame" x="60" y="8" width="201" height="35.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35.5" id="2bD-rc-GEX"/>
+                            <constraint firstAttribute="width" constant="201" id="W9P-3H-1zO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="NlV-ig-Jut" secondAttribute="bottom" constant="5.5" id="0hc-ph-JNa"/>
+                    <constraint firstItem="2U3-q5-mlm" firstAttribute="leading" secondItem="sep-bs-w4P" secondAttribute="trailing" constant="17" id="8No-uO-7yw"/>
+                    <constraint firstItem="2U3-q5-mlm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Df-gK-huF"/>
+                    <constraint firstItem="NlV-ig-Jut" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="Knt-o7-rxL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sep-bs-w4P" secondAttribute="bottom" constant="1" id="Ml2-A4-MIH"/>
+                    <constraint firstItem="sep-bs-w4P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YPc-Yz-WzB"/>
+                    <constraint firstItem="sep-bs-w4P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dVB-Lz-Uey"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NlV-ig-Jut" secondAttribute="trailing" constant="15" id="dsj-fF-ZGQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2U3-q5-mlm" secondAttribute="bottom" constant="-1" id="qUw-gt-mev"/>
+                    <constraint firstItem="NlV-ig-Jut" firstAttribute="leading" secondItem="2U3-q5-mlm" secondAttribute="trailing" constant="17" id="z4q-g1-c3m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="2U3-q5-mlm" id="DXF-bE-KnE"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="240.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_deal_phone.png" width="19" height="25"/>
+        <image name="icon_merchant_location.png" width="34" height="34"/>
+    </resources>
+</document>
