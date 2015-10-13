@@ -1361,7 +1361,6 @@
 		7DDB7CB51BC3E73A001F48DE /* logo_share_sina_weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CA1BC3E738001F48DE /* logo_share_sina_weibo@2x.png */; };
 		7DDB7CB61BC3E73A001F48DE /* logo_share_tengxun.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CB1BC3E738001F48DE /* logo_share_tengxun.png */; };
 		7DDB7CB71BC3E73A001F48DE /* logo_share_tengxun@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CC1BC3E738001F48DE /* logo_share_tengxun@2x.png */; };
-		7DDB7CB81BC3E73A001F48DE /* Magpie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CD1BC3E738001F48DE /* Magpie.bundle */; };
 		7DDB7CB91BC3E73A001F48DE /* mapTabButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CE1BC3E738001F48DE /* mapTabButton.png */; };
 		7DDB7CBA1BC3E73A001F48DE /* mapTabButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76CF1BC3E738001F48DE /* mapTabButton@2x.png */; };
 		7DDB7CBB1BC3E73A001F48DE /* mapTabButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB76D01BC3E738001F48DE /* mapTabButtonSelected.png */; };
@@ -3021,7 +3020,6 @@
 		7DDB76CA1BC3E738001F48DE /* logo_share_sina_weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_share_sina_weibo@2x.png"; sourceTree = "<group>"; };
 		7DDB76CB1BC3E738001F48DE /* logo_share_tengxun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_share_tengxun.png; sourceTree = "<group>"; };
 		7DDB76CC1BC3E738001F48DE /* logo_share_tengxun@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_share_tengxun@2x.png"; sourceTree = "<group>"; };
-		7DDB76CD1BC3E738001F48DE /* Magpie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Magpie.bundle; sourceTree = "<group>"; };
 		7DDB76CE1BC3E738001F48DE /* mapTabButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapTabButton.png; sourceTree = "<group>"; };
 		7DDB76CF1BC3E738001F48DE /* mapTabButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapTabButton@2x.png"; sourceTree = "<group>"; };
 		7DDB76D01BC3E738001F48DE /* mapTabButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapTabButtonSelected.png; sourceTree = "<group>"; };
@@ -5581,7 +5579,6 @@
 				7DDB76CA1BC3E738001F48DE /* logo_share_sina_weibo@2x.png */,
 				7DDB76CB1BC3E738001F48DE /* logo_share_tengxun.png */,
 				7DDB76CC1BC3E738001F48DE /* logo_share_tengxun@2x.png */,
-				7DDB76CD1BC3E738001F48DE /* Magpie.bundle */,
 				7DDB76CE1BC3E738001F48DE /* mapTabButton.png */,
 				7DDB76CF1BC3E738001F48DE /* mapTabButton@2x.png */,
 				7DDB76D01BC3E738001F48DE /* mapTabButtonSelected.png */,
@@ -7089,7 +7086,6 @@
 				7DDB79651BC3E73A001F48DE /* bg_review_report_btn_normal@2x.png in Resources */,
 				7DDB7B0C1BC3E73A001F48DE /* icon_homepage_entertainmentCategory.png in Resources */,
 				7DDB7AC41BC3E73A001F48DE /* icon_dealsmap_back@2x.png in Resources */,
-				7DDB7CB81BC3E73A001F48DE /* Magpie.bundle in Resources */,
 				7DDB7CDE1BC3E73A001F48DE /* register_step1_banner@2x.png in Resources */,
 				7DDB7BAF1BC3E73A001F48DE /* icon_mine_myAccount_username@2x.png in Resources */,
 				7DDB7AE71BC3E73A001F48DE /* icon_feedCell_star_empty@2x.png in Resources */,
