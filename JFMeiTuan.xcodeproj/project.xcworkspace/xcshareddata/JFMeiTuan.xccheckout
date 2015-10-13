@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6D239C7C-8939-4BB4-9F80-23830C0323F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JFMeiTuan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D04BBA95A014C2693BE6F8092DF42DE2D94CFF93</key>
+		<string>https://github.com/tubie/JFMeiTuan.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JFMeiTuan.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D04BBA95A014C2693BE6F8092DF42DE2D94CFF93</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tubie/JFMeiTuan.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D04BBA95A014C2693BE6F8092DF42DE2D94CFF93</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D04BBA95A014C2693BE6F8092DF42DE2D94CFF93</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JFMeiTuan</string>
+		</dict>
+	</array>
+</dict>
+</plist>
