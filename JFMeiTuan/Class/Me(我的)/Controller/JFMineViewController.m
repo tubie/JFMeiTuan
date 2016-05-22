@@ -23,12 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title =@"我的";
     self.view.backgroundColor = [UIColor clearColor];
     [self initView];
 }
 
 -(void)initView{
+    self.title =@"我的";
+
     self.mineTableView =[UITableView initWithTableView:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT-64) withDelegate:self];
     [self.view addSubview:self.mineTableView];
     
