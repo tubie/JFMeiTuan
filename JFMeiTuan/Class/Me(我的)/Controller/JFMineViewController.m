@@ -28,6 +28,8 @@
 }
 
 -(void)initView{
+    
+    //加注释
     self.title =@"我的";
 
     self.mineTableView =[UITableView initWithTableView:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT-64) withDelegate:self];
