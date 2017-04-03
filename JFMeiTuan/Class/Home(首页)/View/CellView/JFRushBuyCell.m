@@ -89,7 +89,7 @@
 }
 
 -(void)setRushData:(NSMutableArray *)rushData{
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < [rushData count]; i++) {
         JFRushDealsModel *rush = rushData[i];
         NSString *imageUrl = rush.mdcLogoUrl;
         NSInteger newPrice = [rush.campaignprice integerValue];
