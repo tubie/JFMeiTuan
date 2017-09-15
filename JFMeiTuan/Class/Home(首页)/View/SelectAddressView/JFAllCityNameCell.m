@@ -11,6 +11,7 @@
 @implementation JFAllCityNameCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     // Initialization code
 }
 

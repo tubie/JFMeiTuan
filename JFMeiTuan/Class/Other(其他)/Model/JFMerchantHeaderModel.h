@@ -1,9 +1,7 @@
 //
 //  JFMerchantHeaderModel.h
-//  JF团购
-//
-//  Created by 保修一站通 on 15/8/29.
-//  Copyright (c) 2015年 JF团购. All rights reserved.
+//  https://github.com/tubie/JFMeiTuan
+//  http://www.jianshu.com/p/e47ca64b8caa
 //
 
 #import <Foundation/Foundation.h>
