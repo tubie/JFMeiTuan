@@ -11,6 +11,8 @@
 @implementation JFShopDetailImageCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+
     // Initialization code
 }
 

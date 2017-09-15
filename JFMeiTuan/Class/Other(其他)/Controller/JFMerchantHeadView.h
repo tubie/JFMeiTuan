@@ -14,7 +14,7 @@
 -(void)merchantHeadViewRefreshButtonClick;
 
 @end
-@interface JFMerchantHeadView : UIView
+@interface JFMerchantHeadView : UITableViewHeaderFooterView
 - (IBAction)refreshAddressBtnClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *currentAddressLabel;
 

@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JFMineHeaderView : UIView
+@interface JFMineHeaderView : UITableViewHeaderFooterView
 
 /**
  *  快速创建henderView

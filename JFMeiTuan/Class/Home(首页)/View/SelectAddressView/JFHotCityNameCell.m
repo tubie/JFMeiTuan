@@ -11,6 +11,7 @@
 @implementation JFHotCityNameCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     // Initialization code
 }
 

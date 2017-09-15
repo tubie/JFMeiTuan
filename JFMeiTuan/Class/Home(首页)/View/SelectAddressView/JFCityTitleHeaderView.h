@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JFCityTitleHeaderView : UIView
+@interface JFCityTitleHeaderView : UITableViewHeaderFooterView
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property(nonatomic, copy)NSString *keyStr;
 + (instancetype)headViewWithTableView:(UITableView *)tableView ;

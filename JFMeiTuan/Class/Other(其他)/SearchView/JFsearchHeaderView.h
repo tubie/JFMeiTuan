@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JFsearchHeaderView : UIView
+@interface JFsearchHeaderView : UITableViewHeaderFooterView
 
 + (instancetype)headViewWithTableView:(UITableView *)tableView ;
 
