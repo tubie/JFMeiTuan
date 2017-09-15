@@ -11,6 +11,8 @@
 @implementation JFMineBigTitleCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+
     // Initialization code
 }
 

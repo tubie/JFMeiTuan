@@ -57,8 +57,6 @@
     [self setRefreshIntableView];
     //初始化数组
     [self initData];
-    //加在城市数据
-    [self laodCityData];
 }
 
 
@@ -69,11 +67,6 @@
     _discountArray = [NSMutableArray array];
     _recommentArray = [NSMutableArray array];
     
-}
-
--(void)laodCityData{
-    NSArray *array =  [GetPlistArray arrayWithString:@"citydata.plist"];
-//    JFLog(@"%@", array);
 }
 
 #pragma mark - 设置导航条

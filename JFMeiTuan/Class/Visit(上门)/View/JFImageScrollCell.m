@@ -12,6 +12,9 @@
 @implementation JFImageScrollCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+    [super awakeFromNib];
+
     // Initialization code
 }
 
