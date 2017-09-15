@@ -113,7 +113,7 @@
 
 //在这个地方搞一个代理通知控制器哪个按钮被点了 作出应以的处理
 -(void)OnTapBtnView:(UITapGestureRecognizer*)sender{
-    JFLog(@"%ld", (long)sender.view.tag);
+//    JFLog(@"%ld", (long)sender.view.tag);
     if ([self.delegate respondsToSelector:@selector(homeMenuCellClick:)]) {
         [self.delegate homeMenuCellClick:(NSInteger)sender.view.tag];
     }

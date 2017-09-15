@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,39 +16,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前位置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wD-xs-HAS" userLabel="当前位置">
-                    <rect key="frame" x="10" y="5" width="245" height="21"/>
+                    <rect key="frame" x="10" y="0.0" width="245" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="eUc-bZ-hpA"/>
-                        <constraint firstAttribute="width" constant="245" id="lFf-3d-XZV"/>
+                        <constraint firstAttribute="width" constant="245" id="Qk5-Ym-ea6"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whM-HO-A7X" userLabel="刷新按钮">
                     <rect key="frame" x="258" y="0.0" width="32" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="32" id="gC3-Sx-9mU"/>
-                        <constraint firstAttribute="width" constant="32" id="iFJ-RA-M0d"/>
+                        <constraint firstAttribute="width" constant="32" id="GNq-9a-YO2"/>
                     </constraints>
                     <state key="normal" image="icon_dellist_locate_refresh.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="refreshAddressBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JAe-jj-SU7"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="1wD-xs-HAS" secondAttribute="bottom" constant="6" id="Ddf-G7-5bK"/>
-                <constraint firstItem="whM-HO-A7X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IVG-bJ-J9m"/>
-                <constraint firstAttribute="trailing" secondItem="whM-HO-A7X" secondAttribute="trailing" constant="15" id="MIl-Ar-tLR"/>
-                <constraint firstAttribute="bottom" secondItem="whM-HO-A7X" secondAttribute="bottom" id="afm-JU-8rN"/>
-                <constraint firstItem="whM-HO-A7X" firstAttribute="leading" secondItem="1wD-xs-HAS" secondAttribute="trailing" constant="3" id="bft-1K-7ye"/>
-                <constraint firstItem="whM-HO-A7X" firstAttribute="leading" secondItem="1wD-xs-HAS" secondAttribute="trailing" constant="3" id="qhb-kd-if5"/>
-                <constraint firstItem="1wD-xs-HAS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="v0g-pt-Z5b"/>
-                <constraint firstItem="1wD-xs-HAS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="vQK-ds-j0H"/>
+                <constraint firstAttribute="bottom" secondItem="whM-HO-A7X" secondAttribute="bottom" id="2D2-hy-pdm"/>
+                <constraint firstAttribute="bottom" secondItem="1wD-xs-HAS" secondAttribute="bottom" id="I4K-vS-6Mz"/>
+                <constraint firstItem="1wD-xs-HAS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="IPG-vA-YtP"/>
+                <constraint firstAttribute="trailing" secondItem="whM-HO-A7X" secondAttribute="trailing" constant="15" id="QNm-sn-4dr"/>
+                <constraint firstItem="whM-HO-A7X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lj2-LX-9hA"/>
+                <constraint firstItem="1wD-xs-HAS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ySZ-hJ-zkU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

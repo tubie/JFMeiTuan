@@ -44,7 +44,7 @@
 -(void)loadAdData{
     NSString *urlStr = [[GetUrlString sharedManager]urlWithVisitAd];
     [NetWork sendGetUrl:urlStr withParams:nil success:^(id responseBody) {
-        JFLog(@"%@", responseBody);
+//        JFLog(@"%@", responseBody);
         [_advImageUrlArray removeAllObjects];
         [_advArray removeAllObjects];
         

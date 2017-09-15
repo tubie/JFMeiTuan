@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,7 +23,7 @@
                         <constraint firstAttribute="height" constant="55" id="Pwr-34-hni"/>
                     </constraints>
                     <state key="normal" backgroundImage="icon_mine_default_portrait.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="土鳖不土" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6h-Mc-zKp">
@@ -27,13 +33,13 @@
                         <constraint firstAttribute="width" constant="68" id="tzz-D3-DRa"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户余额:3毛" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld9-VZ-F3y">
                     <rect key="frame" x="97" y="46" width="128" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mine_accountViewRightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-7n-uzj">
@@ -46,17 +52,14 @@
             </subviews>
             <constraints>
                 <constraint firstItem="v6L-7n-uzj" firstAttribute="leading" secondItem="z6h-Mc-zKp" secondAttribute="trailing" constant="132" id="06v-3z-Iq7"/>
-                <constraint firstAttribute="trailing" secondItem="v6L-7n-uzj" secondAttribute="trailing" constant="25" id="2yV-by-ZhC"/>
+                <constraint firstItem="z6h-Mc-zKp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="0Pu-pt-65X"/>
                 <constraint firstItem="v6L-7n-uzj" firstAttribute="leading" secondItem="Ld9-VZ-F3y" secondAttribute="trailing" constant="72" id="3B2-JI-M3v"/>
-                <constraint firstItem="1yb-6s-NyJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GJx-K6-WXb"/>
-                <constraint firstItem="1yb-6s-NyJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="IZc-iC-OaO"/>
                 <constraint firstItem="Ld9-VZ-F3y" firstAttribute="leading" secondItem="1yb-6s-NyJ" secondAttribute="trailing" constant="30" id="Icu-yf-pGm"/>
-                <constraint firstAttribute="bottom" secondItem="v6L-7n-uzj" secondAttribute="bottom" constant="20" id="ShR-aP-rA4"/>
+                <constraint firstItem="1yb-6s-NyJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Kss-if-JVI"/>
+                <constraint firstItem="Ld9-VZ-F3y" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="STA-Ka-cAf"/>
                 <constraint firstItem="z6h-Mc-zKp" firstAttribute="leading" secondItem="Ld9-VZ-F3y" secondAttribute="leading" id="a5d-t6-U18"/>
-                <constraint firstItem="v6L-7n-uzj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="d9C-SH-Ty8"/>
-                <constraint firstItem="z6h-Mc-zKp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="jKe-cd-sgq"/>
-                <constraint firstAttribute="bottom" secondItem="Ld9-VZ-F3y" secondAttribute="bottom" constant="8" id="qKV-ht-6qQ"/>
-                <constraint firstAttribute="bottom" secondItem="1yb-6s-NyJ" secondAttribute="bottom" constant="10" id="r1G-E9-rRa"/>
+                <constraint firstItem="1yb-6s-NyJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="ozG-wY-Lc5"/>
+                <constraint firstItem="v6L-7n-uzj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="rPr-KG-hOe"/>
                 <constraint firstItem="Ld9-VZ-F3y" firstAttribute="top" secondItem="z6h-Mc-zKp" secondAttribute="bottom" constant="8" id="t9f-xq-eGW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

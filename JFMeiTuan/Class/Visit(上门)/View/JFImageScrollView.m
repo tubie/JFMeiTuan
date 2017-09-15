@@ -59,7 +59,7 @@
         imageView.backgroundColor = [UIColor redColor];
 
         NSString *imageName =[NSString stringWithFormat:@"%@",imageArray[i]];
-        NSLog(@"%@",imageName);
+//        NSLog(@"%@",imageName);
         [imageView sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:@"bg_customReview_image_default"]];        
     }
 }

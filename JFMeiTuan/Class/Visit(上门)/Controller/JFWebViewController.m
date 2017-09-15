@@ -63,7 +63,7 @@
     self.webView.scalesPageToFit = YES;
     [self.view addSubview:self.webView];
     
-    NSLog(@"webview URL:%@",self.urlStr);
+//    NSLog(@"webview URL:%@",self.urlStr);
     NSString *urlStr = [self.urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
     [self.webView loadRequest:request];
@@ -76,7 +76,7 @@
 }
 
 -(void)OnBackBtn:(UIButton *)sender{
-    NSLog(@"_isFirstIn:%d",_isFirstIn);
+//    NSLog(@"_isFirstIn:%d",_isFirstIn);
     if (_isFirstIn <= 1) {
         [self.navigationController popViewControllerAnimated:YES];
     }else{

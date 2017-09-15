@@ -17,7 +17,7 @@
     NSArray *array =  [GetPlistArray arrayWithString:@"citydata.plist"];
     NSArray *cityArray =  [array objectAtIndex:8] [@"citylist"];
      NSArray *areaArray = [cityArray objectAtIndex:0][@"arealist"];
-    JFLog(@"%@", areaArray);
+//    JFLog(@"%@", areaArray);
     //允许scrollerView竖直移动
     self.scrollView.alwaysBounceVertical = YES;
     //允许scrollerView的可移动内容

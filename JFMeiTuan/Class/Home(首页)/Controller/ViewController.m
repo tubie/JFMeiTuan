@@ -133,7 +133,7 @@
 }
 #pragma mark -JFAddressScrollViewButtonDelegate
 -(void)areaButtonClick:(UIButton *)button{
-    JFLog(@"%@", button.currentTitle);
+//    JFLog(@"%@", button.currentTitle);
     [self.leftButton setTitle:button.currentTitle forState:UIControlStateNormal];
     self.selectAddressView.hidden =  !self.selectAddressView.hidden ;
   
@@ -261,7 +261,7 @@
         _hotQueueModel =  [JFHotQueueModel objectWithKeyValues:dict];
         [self.firstTableView reloadData];
     } failure:^(NSError *error) {
-        JFLog(@"%@", error);
+//        JFLog(@"%@", error);
         [self.firstTableView.header endRefreshing];
 
     }];

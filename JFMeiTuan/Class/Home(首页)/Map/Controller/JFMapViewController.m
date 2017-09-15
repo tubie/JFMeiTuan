@@ -56,7 +56,7 @@
     [NetWork sendGetByReplacingUrl:urlStr withParams:nil success:^(id responseBody) {
         NSMutableArray *dataArray = [responseBody objectForKey:@"data"];
         
-        NSLog(@"%@", dataArray);
+//        NSLog(@"%@", dataArray);
         
         for (int i = 0; i < dataArray.count; i++) {
             JFDataModel  *jfdatamodel = [JFDataModel objectWithKeyValues:dataArray[i]];

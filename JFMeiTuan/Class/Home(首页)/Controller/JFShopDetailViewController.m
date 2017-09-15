@@ -60,7 +60,7 @@
 -(void)initData{
     NSString *urlStr =  [[GetUrlString sharedManager]urlWithShopDetailData:self.shopID];
     [NetWork sendGetByReplacingUrl:urlStr withParams:nil success:^(id responseBody) {
-        NSLog(@"店铺详情请求成功");
+//        NSLog(@"店铺详情请求成功");
         NSMutableArray *dataDic = [responseBody objectForKey:@"data"];
         shopDetailModel = [JFShopDatailDataModel objectWithKeyValues:dataDic[0]];
         self.tableView.hidden = NO;

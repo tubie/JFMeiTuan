@@ -52,9 +52,9 @@
     
 }
 -(void)tabBar:(JFTabBar *)tabBar didselectedButtonFrom:(int)from to:(int)to{
-    NSLog(@"%d, %d", from, to);
+//    NSLog(@"%d, %d", from, to);
     self.selectedIndex = to;
-    NSLog(@"%lu", (unsigned long)self.selectedIndex);
+//    NSLog(@"%lu", (unsigned long)self.selectedIndex);
     
 }
 

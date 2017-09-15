@@ -118,7 +118,7 @@
 }
 
 -(void)OnTapBackView:(UITapGestureRecognizer *)sender{
-    NSLog(@"tag:%ld",sender.view.tag);
+//    NSLog(@"tag:%ld",sender.view.tag);
     
     if ([self.delegate respondsToSelector:@selector(didSelectAtIndexRushBuyCell:)]) {
         [self.delegate didSelectAtIndexRushBuyCell:sender.view.tag -100];
