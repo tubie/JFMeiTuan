@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>当使用到时允许更新位置信息</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>总是允许位置更新</string>
+	<key>NSLocationUsageDescription</key>
+	<string>使用位置信息</string>
 </dict>
 </plist>
