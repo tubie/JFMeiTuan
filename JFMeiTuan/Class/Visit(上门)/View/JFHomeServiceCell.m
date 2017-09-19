@@ -81,17 +81,28 @@
 -(void)setHomeServiceArray:(NSMutableArray *)homeServiceArray{
     _homeServiceArray = homeServiceArray;
     for (int i = 0; i < homeServiceArray.count; i++) {
+//        UIView *backView = [self viewWithTag:10+i];
+//        backView.hidden = NO;
+//        JFHomeServiceModel *homeM = homeServiceArray[i];
+//        backView.backgroundColor = [homeM.background stringTOColor:homeM.background] ;
+//        //
+//        UIImageView *imageView = (UIImageView *)[self viewWithTag:50+i];
+//        [imageView sd_setImageWithURL:[NSURL URLWithString:homeM.cateImgUrl] placeholderImage:[UIImage imageNamed:@"bg_customReview_image_default"]];
+//        
+//        //
+//        UILabel *titleLabel = (UILabel *)[self viewWithTag:100+i];
+//        titleLabel.text = homeM.cateName;
+        
+        
+        /*美团的接口 不支持了 所以这边用的假数据*/
         UIView *backView = [self viewWithTag:10+i];
         backView.hidden = NO;
-        JFHomeServiceModel *homeM = homeServiceArray[i];
-        backView.backgroundColor = [homeM.background stringTOColor:homeM.background] ;
-        //
-        UIImageView *imageView = (UIImageView *)[self viewWithTag:50+i];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:homeM.cateImgUrl] placeholderImage:[UIImage imageNamed:@"bg_customReview_image_default"]];
-        
-        //
+          UIImageView *imageView = (UIImageView *)[self viewWithTag:50+i];
+          backView.backgroundColor = [UIColor whiteColor];
+           [imageView sd_setImageWithURL:[NSURL URLWithString:homeServiceArray[i]] placeholderImage:[UIImage imageNamed:@"bg_customReview_image_default"]];
         UILabel *titleLabel = (UILabel *)[self viewWithTag:100+i];
-        titleLabel.text = homeM.cateName;
+                titleLabel.text = @"团一次美一次";
+
         
     }
 }
