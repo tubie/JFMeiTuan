@@ -87,7 +87,7 @@
  */
 -(void)setDiscountArray:(NSMutableArray *)discountArray{
     _discountArray = discountArray;
-    for (int j = 0; j < 4; ++j) {
+    for (int j = 0; j < _discountArray.count; j++) {
         UILabel *titleLabel = (UILabel *)[self viewWithTag:j+200];
         UILabel *subtitleLabel = (UILabel *)[self viewWithTag:j+220];
         UIImageView *imageView = (UIImageView *)[self viewWithTag:j+240];
