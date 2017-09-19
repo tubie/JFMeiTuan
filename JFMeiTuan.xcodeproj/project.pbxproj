@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25E6CDD67229341789360E93 /* libPods-JFMeiTuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397E362A508B4276A68AC7E /* libPods-JFMeiTuan.a */; };
 		7DDB70451BC3E69E001F48DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB70441BC3E69E001F48DE /* main.m */; };
 		7DDB704E1BC3E69E001F48DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB704C1BC3E69E001F48DE /* Main.storyboard */; };
 		7DDB70501BC3E69E001F48DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB704F1BC3E69E001F48DE /* Images.xcassets */; };
@@ -1482,6 +1483,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B31EAC7530F60293131010E /* Pods-JFMeiTuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan/Pods-JFMeiTuan.debug.xcconfig"; sourceTree = "<group>"; };
 		7DDB703F1BC3E69E001F48DE /* JFMeiTuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFMeiTuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDB70431BC3E69E001F48DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DDB70441BC3E69E001F48DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -3142,6 +3144,8 @@
 		7DDB7D591BC3EB33001F48DE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7DDB7D5B1BC3EB50001F48DE /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		7DDB7D5D1BC3EB5F001F48DE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8397E362A508B4276A68AC7E /* libPods-JFMeiTuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFMeiTuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47AD0C8BB7B135C97B1DE0B /* Pods-JFMeiTuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan/Pods-JFMeiTuan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3161,6 +3165,7 @@
 				7DDB7D4C1BC3EAB1001F48DE /* QuartzCore.framework in Frameworks */,
 				7DDB7D4A1BC3EAA4001F48DE /* OpenGLES.framework in Frameworks */,
 				7DDB77F91BC3E73A001F48DE /* libbaidumapapi.a in Frameworks */,
+				25E6CDD67229341789360E93 /* libPods-JFMeiTuan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3174,12 +3179,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68F5FC8AFDD442A9CAC52ACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8397E362A508B4276A68AC7E /* libPods-JFMeiTuan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DDB70361BC3E69E001F48DE = {
 			isa = PBXGroup;
 			children = (
 				7DDB70411BC3E69E001F48DE /* JFMeiTuan */,
 				7DDB705B1BC3E69F001F48DE /* JFMeiTuanTests */,
 				7DDB70401BC3E69E001F48DE /* Products */,
+				D66925850BD47955B659E906 /* Pods */,
+				68F5FC8AFDD442A9CAC52ACE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5764,6 +5779,15 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		D66925850BD47955B659E906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B31EAC7530F60293131010E /* Pods-JFMeiTuan.debug.xcconfig */,
+				A47AD0C8BB7B135C97B1DE0B /* Pods-JFMeiTuan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -5771,9 +5795,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DDB70621BC3E69F001F48DE /* Build configuration list for PBXNativeTarget "JFMeiTuan" */;
 			buildPhases = (
+				902D8B7BDB4552E0EADD0AE8 /* [CP] Check Pods Manifest.lock */,
 				7DDB703B1BC3E69E001F48DE /* Sources */,
 				7DDB703C1BC3E69E001F48DE /* Frameworks */,
 				7DDB703D1BC3E69E001F48DE /* Resources */,
+				C4B991FA193F8AD58CAD37D5 /* [CP] Embed Pods Frameworks */,
+				DAA7D53B1C19ACB06CD73BA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -7178,6 +7205,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		902D8B7BDB4552E0EADD0AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFMeiTuan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B991FA193F8AD58CAD37D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFMeiTuan/Pods-JFMeiTuan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA7D53B1C19ACB06CD73BA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFMeiTuan/Pods-JFMeiTuan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DDB703B1BC3E69E001F48DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -7451,6 +7529,7 @@
 		};
 		7DDB70631BC3E69F001F48DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B31EAC7530F60293131010E /* Pods-JFMeiTuan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -7467,6 +7546,7 @@
 		};
 		7DDB70641BC3E69F001F48DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47AD0C8BB7B135C97B1DE0B /* Pods-JFMeiTuan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
